@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 '''
-    example_flask_app.py
+    flask_sample.py
     Jeff Ondich, 22 April 2016
+    Updated 7 October 2020
 
     A slightly more complicated Flask sample app than the
     "hello world" app found at http://flask.pocoo.org/.
