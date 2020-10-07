@@ -8,9 +8,9 @@
     "hello world" app found at http://flask.pocoo.org/.
 '''
 import sys
+import argparse
 import flask
 import json
-from flask import current_app
 
 app = flask.Flask(__name__)
 
@@ -84,16 +84,13 @@ def get_movies():
 @app.route('/help')
 def get_help():
     help_message = ''
-    with current_app.open_resource('static/help.html', 'r') as f:
+    with flask.current_app.open_resource('static/help.html', 'r') as f:
         help_message = f.read()
     return help_message
 
 if __name__ == '__main__':
-    if len(sys.argv) != 3:
-        print('Usage: {0} host port'.format(sys.argv[0]))
-        print('  Example: {0} perlman.mathcs.carleton.edu 5101'.format(sys.argv[0]))
-        exit()
-    
-    host = sys.argv[1]
-    port = int(sys.argv[2])
-    app.run(host=host, port=port, debug=True)
+    parser = argparse.ArgumentParser('A sample Flask application/API')
+    parser.add_argument('host', help='the host on which this application is running')
+    parser.add_argument('port', type=int, help='the port on which this application is listening')
+    arguments = parser.parse_args()
+    app.run(host=arguments.host, port=arguments.port, debug=True)
