@@ -74,13 +74,4 @@ Assuming all goes well, you'll be able to click on the "Get Authors" button and 
 
 (j) When you're done, Ctrl-C in the terminal to terminate the web application.
 
-(k) If you want to keep your website running after you logout of perlman, run it like this:
-
-    python3 books_webapp.py perlman.mathcs.carleton.edu YOURPORT &
-
-Note the ampersand (&) at the end of the line.
-
-
-
-
-
+(k) [Instructions for running your page even when you're logged off of perlman will be forthcoming.]
