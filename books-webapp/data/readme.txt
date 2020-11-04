@@ -24,6 +24,8 @@ So to connect to your database with psql while logged in to perlman? Just do thi
 
     psql
 
+NOTE: To do step 3 conveniently, you should cd into books-webapp/data before running psql.
+
 
 2. Create the tables in your PostgreSQL database
 
@@ -46,7 +48,8 @@ So to connect to your database with psql while logged in to perlman? Just do thi
         author_id integer
     );
 
-3. Load the data. In psql:
+3. Load the data. Make sure you cd'd into books-webapp/data before running psql.
+At the psql prompt:
 
     \copy authors from 'authors.csv' DELIMITER ',' CSV NULL AS 'NULL'
     \copy books from 'books.csv' DELIMITER ',' CSV NULL AS 'NULL'
