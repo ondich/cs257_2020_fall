@@ -10,9 +10,6 @@
 '''
 import sys
 import flask
-import json
-import config
-import psycopg2
 import books_api
 
 ########### Initializing Flask ###########
