@@ -21,7 +21,7 @@ RESPONSE:
     Each actor is represented as a dictionary with keys "last_name" and "first_name".
     (Yes, this is a super-rich dataset, why do you ask?)
 
-REQUEST: /movies[?genre={GENRE}&start_year={STARTYEAR}&end_year={ENDYEAR}]
+REQUEST: /movies[?genre={GENRE}&amp;start_year={STARTYEAR}&amp;end_year={ENDYEAR}]
     A list of movies matching the specified GET parameters. If genre={GENRE}
 
       start_year, int: reject any movie released earlier than this year
@@ -30,7 +30,7 @@ REQUEST: /movies[?genre={GENRE}&start_year={STARTYEAR}&end_year={ENDYEAR}]
 
     For example:
 
-        /movies?start_year=1980&genre=thriller
+        /movies?start_year=1980&amp;genre=thriller
 
     will return a list of all thriller movies released in 1980 or later.
 

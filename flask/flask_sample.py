@@ -83,10 +83,7 @@ def get_movies():
 
 @app.route('/help')
 def get_help():
-    help_message = ''
-    with flask.current_app.open_resource('static/help.html', 'r') as f:
-        help_message = f.read()
-    return help_message
+    return flask.render_template('help.html')
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser('A sample Flask application/API')
