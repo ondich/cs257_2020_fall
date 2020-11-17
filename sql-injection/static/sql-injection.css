@@ -1,0 +1,16 @@
+/*
+    sql-injection.css
+    Jeff Ondich, 17 November 2020
+
+    Styles for the SQL Injection demo
+*/
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+}
+
