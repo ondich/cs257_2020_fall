@@ -4,7 +4,7 @@
     17 November 2020
 
     This sample illustrates a technique for creating a sequence
-    of lists, where the selection of the first list determines the
+    of menu/lists, where the selection of the first list determines the
     contents of the second list, etc.
 
     This code is intended to be simple-minded, to illustrate the basic
