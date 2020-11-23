@@ -148,7 +148,7 @@ function createStateChart(stateName, stateAbbreviation) {
 
         chart.on('created', function(bar) {
             var toolTipSelector = '#state-new-cases-tooltip';
-            $('.state-new-cases .ct-bar').on('mouseenter', function(e) {  // Set a "hover handler" for every bar in the chart
+            $('.chart-container .ct-bar').on('mouseenter', function(e) {  // Set a "hover handler" for every bar in the chart
                 var value = $(this).attr('ct:value'); // value and meta come ultimately from the newCasesData above
                 var label = $(this).attr('ct:meta');
                 var caption = '<b>Date:</b> ' + label + '<br><b>New cases (' + stateName + '):</b> ' + value;
