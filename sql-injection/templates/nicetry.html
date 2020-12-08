@@ -9,13 +9,21 @@
 </head>
 
 <body>
-    <h2>CS 257: SQL Injection Example</h2>
+    <h2>CS 257: SQL Injection Example Round 2 (Nice Try)</h2>
 
-    <p>This page and the accompanying Flask app and API illustrate the danger of SQL injection.
-        Study this project, but don't copy it.</p>
+    <p>Here, we try to constrain the user's behavior by using a
+        &lt;select&gt; element instead of a &lt;input type="text"&gt;
+        element. Will this fix our security problem?</p>
+
+    <p>Ha. No.</p>
 
     <div class="search_form">
-        <input id="search_text" type="text">
+        <p>Find authors whose last names contain the selected capital letter.</p>
+        <select id="search_text">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+        </select>
         <button id="search_button">Search authors</button>
         <table id="results_table"></table>
     </div>
