@@ -14,6 +14,10 @@ th, td {
     padding: 15px;
 }
 
+button {
+    margin-left: 8px;
+}
+
 .search_form {
     margin: 15px;
     padding: 15px;
